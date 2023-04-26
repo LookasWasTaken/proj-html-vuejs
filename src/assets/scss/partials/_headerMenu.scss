@@ -3,4 +3,16 @@
 nav{
     background-color: $primary;
     color: $grey;
+    span{
+        cursor: pointer;
+    }
+}
+
+.social{
+    a{
+        color: $light;
+        &:hover{
+            color: $grey;
+        }
+    }
 }

@@ -1,31 +1,42 @@
 <script>
 import { state } from "../assets/data/state";
+import { social } from "../assets/data/social";
 
 export default {
     name: 'HeaderMenu',
     data() {
         return {
-            state
+            state,
+            social,
         }
     }
 }
 </script>
 
 <template>
-        <nav>
-            <div class="container d-flex justify-content-between align-items-center py-3">
-                <div class="open_hours">
-                    <span>Open Hours: Mon - Sat / 9.00 - 18.00</span>
-                </div>
-                <div class="generals d-flex gap-5 justify-content-between align-items-center">
+    <nav>
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="open_hours d-flex gap-2">
+                <span><font-awesome-icon icon="fa-regular fa-clock" shake /></span>
+                <span>Open Hours: Mon - Sat / 9.00 - 18.00</span>
+            </div>
+            <div class="generals d-flex gap-5 justify-content-between align-items-center">   
+                <div class="number d-flex gap-2">
+                    <span><font-awesome-icon icon="fa-solid fa-phone" /></span>
                     <span>+1 (305) 1234-5678</span>
+                </div>
+                <div class="mail d-flex gap-2">
+                    <span><font-awesome-icon icon="fa-solid fa-envelope" /></span>
                     <span>nexgen@example.com</span>
-                    <div class="social d-flex gap-3">
-                        <span>FB</span>
-                        <span>TW</span>
-                        <span>LI</span>
-                    </div>
+                </div>
+                <div class="social d-flex gap-4">
+                    <span v-for="icon in social">
+                        <a :href="icon.ref">
+                            <font-awesome-icon :icon="icon.icon" />
+                        </a>
+                    </span>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 </template>
