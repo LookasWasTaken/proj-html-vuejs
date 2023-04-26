@@ -6,6 +6,7 @@ import AppFooter from './components/AppFooter.vue';
 </script>
 
 <template>
+  <font-awesome-icon icon="fa-solid fa-user" />
   <AppHeader>
   </AppHeader>
   <AppMain>

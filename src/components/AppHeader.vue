@@ -13,6 +13,6 @@ export default {
 
 <template>
     <header>
-        ciao sono un header
+        
     </header>
 </template>
