@@ -30,16 +30,19 @@ export default {
                             <li>SKILLS</li>
                             <li>PARTNERS</li>
                             <li>BLOG</li>
-                            <li>GET IN TOUCH</li>
+                            <li class="active">GET IN TOUCH</li>
                         </ul>
                     </div>
-                    <div class="info w-50 d-flex flex-column gap-3 my-5">
-                        <h1 class="my-3"><div class="logistics">Logistics</div>
+                    <div class="info d-flex flex-column gap-3 my-5">
+                        <h1 class="my-3">
+                            <div class="accent">Logistics
+                                <div class="background"></div>
+                            </div>
                              that goes further.</h1>
                         <p class="my-3">For 20 years working with the most innovative in the field of transport.</p>
                         <div class="buttons my-3 d-flex justify-content-between align-items-center">
-                            <button>GET IN TOUCH</button>
-                            <button>READ MORE</button>
+                            <a class="btn btn-custom bg" href="#" role="button">GET IN TOUCH</a>
+                            <a class="btn btn-custom" href="#" role="button">READ MORE</a>
                         </div>
                     </div>
                 </div>

@@ -5,11 +5,50 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: $light;
+    .menu{
+        .active{
+            padding: 0.375rem 0.75rem;
+            background-color: $elfgreen;
+            border-radius: 0.375rem;
+            transition: all 0.5s;
+            &:hover{
+                scale: 1.1;
+            }
+            &:active{
+                scale: 0.9;
+            }
+        }
+    }
     .info{
+        width: 60%;
         h1{
             font-size: 3.5rem;
-            .logistics{
-                background-color: $elfgreentransparent;
+            .accent{
+                position: relative;
+                z-index: 2;
+                .background{
+                    background-color: $elfgreentransparent;
+                    height: 30px;
+                    width: 225px;
+                    position: absolute;
+                    top: 65%;
+                    right: 25%;
+                    z-index: -1;
+                }
+            }
+        }
+        .bg{
+            background-color: $elfgreen;
+        }
+        .btn-custom{
+            color: $light;
+            border: $elfgreen 1px solid;
+            transition: all 0.5s;
+            &:hover{
+                scale: 1.1;
+            }
+            &:active{
+                scale: 0.9;
             }
         }
     }

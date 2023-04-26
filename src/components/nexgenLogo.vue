@@ -7,12 +7,12 @@ export default {
 
 <template>
     <div class="logo d-flex justify-content-center align-items-center gap-3">
-        <div class="nex d-flex gap-4">
+        <div class="nex d-flex gap-3">
             <span>N</span>
             <span>E</span>
             <span>X</span>
         </div>
-        <div class="gen d-flex gap-4">
+        <div class="gen d-flex gap-3">
             <span>G</span>
             <span>E</span>
             <span>N</span>
