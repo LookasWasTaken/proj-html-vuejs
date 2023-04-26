@@ -1,0 +1,11 @@
+@use "./variables.scss" as *;
+
+.logo{
+    .nex{
+        color: $secondary;
+        background-color: $elfgreentransparent;
+        padding: 0.8rem 0.8rem 0.8rem 1.5rem;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    } 
+}

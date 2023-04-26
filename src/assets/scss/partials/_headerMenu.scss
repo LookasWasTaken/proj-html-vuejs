@@ -3,6 +3,7 @@
 nav{
     background-color: $primary;
     color: $grey;
+    box-shadow: inset 0 0 5px 0 black;
     span{
         cursor: pointer;
     }
