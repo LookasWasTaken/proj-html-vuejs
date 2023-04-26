@@ -1,0 +1,6 @@
+@use "./variables.scss" as *;
+
+nav{
+    background-color: $primary;
+    color: $grey;
+}
