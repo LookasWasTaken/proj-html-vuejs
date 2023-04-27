@@ -15,7 +15,7 @@
     .decoration{
         display: flex;
         flex-wrap: wrap;
-        width: 250px;
+        width: 150px;
         align-content: flex-start;
         align-self: flex-start;
         position: absolute;
@@ -36,8 +36,18 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        p{
+            color: $grey;
+        }
         h6{
             color: $elfgreen;
+        }
+        h3{
+            span{
+                background-color: $elfgreentransparent;
+                padding: 0 0.5rem;
+                border-radius: 5px;
+            }
         }
     }
     .right{
