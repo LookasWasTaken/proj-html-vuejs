@@ -1,0 +1,22 @@
+@use "./variables.scss" as *;
+
+#network{
+    .decoration{
+
+    }
+    .left{
+        background-color: $woodsmoke;
+        width: 50%;
+        padding: 8rem 5rem 8rem 20rem;
+        color: $light;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        h6{
+            color: $elfgreen;
+        }
+    }
+    .right{
+        width: 50%;
+    }
+}

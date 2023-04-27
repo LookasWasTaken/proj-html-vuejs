@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="service">
         <div class="container">
             <div class="row row-cols-3">
                 <div class="col p-5">
