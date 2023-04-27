@@ -1,1 +1,85 @@
 @use "./variables.scss" as *;
+
+footer {
+    background-image: url(/src/assets/img/bg-10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 0 0;
+
+    .background {
+        background-color: $transparent;
+        border: none;
+        color: $darkgrey;
+
+        .contacts {
+            div {
+                div:first-child {
+                    background-color: $greytransparent;
+                    aspect-ratio: 1/1;
+                    width: 35px;
+                    border-radius: 50%;
+                    scale: 1.2;
+                    margin-right: 0.5rem;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background-color: $woodsmoke;
+                        border-color: $grey;
+                        color: $secondary;
+                        scale: 1.3;
+                    }
+
+                    &:active {
+                        scale: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .custom {
+        background-color: $greytransparent;
+        border: none;
+
+        h5 {
+            color: $light;
+            text-transform: uppercase;
+            margin-left: 2rem;
+        }
+
+        ul {
+            li {
+                a {
+                    color: $darkgrey;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    font-size: 0.88rem;
+
+                    &:hover {
+                        color: $secondary;
+                    }
+
+                    &:active {
+                        scale: 0.6;
+                    }
+
+                    &:hover svg {
+                        transform: rotate(90deg);
+                        scale: 1.2;
+                    }
+
+                    span {
+                        margin-right: 0.5rem;
+                        margin-left: 3rem;
+
+                        svg {
+                            scale: 0.8;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

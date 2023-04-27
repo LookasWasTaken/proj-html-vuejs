@@ -1,0 +1,15 @@
+@use "./variables.scss" as *;
+
+#credits {
+    margin: 7rem 0 0 0;
+    background-color: $blacktransparent;
+    height: 50px;
+    color: $grey;
+    a{
+        color: $darkgrey;
+        text-decoration: none;
+        &:hover{
+            color: $secondary;
+        }
+    }
+}
