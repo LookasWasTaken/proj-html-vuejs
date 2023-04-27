@@ -3,8 +3,8 @@ import { state } from '../assets/data/state';
 
 export default {
     name: 'NetworkSection',
-    data(){
-        return{
+    data() {
+        return {
             state
         }
     },
@@ -13,7 +13,9 @@ export default {
 
 <template>
     <section id="network" class="d-flex">
-        <div class="decoration up"></div>
+        <div class="decoration up">
+            <div v-for="n in 40"></div>
+        </div>
         <div class="left">
             <h6>ABOUT THE NETWORK</h6>
             <h3>
@@ -54,6 +56,8 @@ export default {
         <div class="right">
             <img class="img-fluid" src="../assets/img/about-5.jpg" alt="company image">
         </div>
-        <div class="decoration down"></div>
+        <div class="decoration down">
+            <div v-for="n in 40"></div>
+        </div>
     </section>
 </template>

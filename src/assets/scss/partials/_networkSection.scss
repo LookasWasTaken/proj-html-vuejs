@@ -1,8 +1,32 @@
 @use "./variables.scss" as *;
 
 #network{
+    position: relative;
+    .up{
+        top: 0;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+    .down{
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
     .decoration{
-
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        align-content: flex-start;
+        align-self: flex-start;
+        position: absolute;
+        div{
+            width: 10%;
+            border-radius: 50%;
+            aspect-ratio: 1 / 1;
+            background-color: $elfgreen;
+            opacity: 0.4;
+            scale: 0.3;
+        }
     }
     .left{
         background-color: $woodsmoke;
