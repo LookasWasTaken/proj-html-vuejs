@@ -1,0 +1,73 @@
+@use "./variables.scss" as *;
+
+#letter {
+    background-image: url(/src/assets/img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $light;
+    padding: 6.5rem 0;
+
+    .left {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10rem;
+
+        .info {
+            width: 40%;
+
+            h6 {
+                color: $elfgreen;
+            }
+
+            h2 {
+                padding: 1.5rem 0;
+
+                span {
+                    background-color: $elfgreentransparent;
+                    padding: 0 0.2rem;
+                    border-radius: 2px;
+                }
+            }
+
+            p {
+                color: $darkgrey;
+            }
+        }
+    }
+
+    .right {
+        width: 30%;
+
+        form {
+            input {
+                width: 50%;
+            }
+
+            #emailHelp {
+                color: $light;
+            }
+
+            .btn-custom {
+                color: $light;
+                background-color: $elfgreen;
+                border: $elfgreen 1px solid;
+                padding: 0.5rem 1.1rem;
+                transition: all 0.5s;
+
+                &:hover {
+                    scale: 1.1;
+                    color: $elfgreen;
+                    background-color: $smokegreen;
+                    border: $elfgreen 1px solid;
+                }
+
+                &:active {
+                    scale: 0.9;
+                }
+            }
+        }
+    }
+}

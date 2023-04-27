@@ -4,6 +4,7 @@ import ServiceSection from "./ServiceSection.vue"
 import NetworkSection from "./NetworkSection.vue"
 import BannerSection from "./BannerSection.vue"
 import NewsSection from "./NewsSection.vue"
+import LetterSection from "./LetterSection.vue"
 
 export default {
     name: 'AppMain',
@@ -12,6 +13,7 @@ export default {
         NetworkSection,
         BannerSection,
         NewsSection,
+        LetterSection,
     },
     data() {
         return {
@@ -27,5 +29,6 @@ export default {
         <NetworkSection></NetworkSection>
         <BannerSection></BannerSection>
         <NewsSection></NewsSection>
+        <LetterSection></LetterSection>
     </main>
 </template>
