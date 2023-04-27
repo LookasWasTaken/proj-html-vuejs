@@ -1,6 +1,7 @@
 <script>
 import { state } from "../assets/data/state";
 import nexgenLogo from "../components/nexgenLogo.vue"
+import { items } from "../assets/data/item";
 
 export default {
     name: 'JumboTron',
@@ -9,7 +10,8 @@ export default {
     },
     data() {
         return {
-            state
+            state,
+            items,
         }
     }
 }
@@ -25,12 +27,10 @@ export default {
                 <div class="right">
                     <div class="menu">
                         <ul class="list-unstyled d-flex justify-content-between align-items-center">
-                            <li>HOME</li>
-                            <li>SERVICES</li>
-                            <li>SKILLS</li>
-                            <li>PARTNERS</li>
-                            <li>BLOG</li>
-                            <li class="active">GET IN TOUCH</li>
+                            <li v-for="item in items">
+                                <a href="#">{{ item }}</a>
+                            </li>
+                            <li class="active"><a href="#">GET IN TOUCH</a></li>
                         </ul>
                     </div>
                     <div class="info d-flex flex-column gap-3 my-5">
