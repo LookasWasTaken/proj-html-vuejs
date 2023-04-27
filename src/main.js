@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
     faPhone,
     faEnvelope,
+    faLocationDot,
   } from '@fortawesome/free-solid-svg-icons'
 import {
     faClock,
@@ -15,6 +16,6 @@ import {
     faFacebookF,
     faTwitter,
   } from '@fortawesome/free-brands-svg-icons'
-  library.add(faPhone, faEnvelope, faClock, faLinkedinIn , faFacebookF, faTwitter)
+  library.add(faPhone, faEnvelope, faLocationDot, faClock, faLinkedinIn , faFacebookF, faTwitter)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

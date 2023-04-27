@@ -1,0 +1,99 @@
+@use "./variables.scss" as *;
+
+#message{
+    padding: 6rem;
+    background-color: $lightgreen;
+    .btn-custom{
+        color: $elfgreen;
+        border: $elfgreen 1px solid;
+        transition: all 0.5s;
+        &:hover{
+            scale: 1.1;
+            background-color: $secondary;
+            color: $light;
+        }
+        &:active{
+            scale: 0.9;
+        }
+    }
+    .left{
+        width: 70%;
+        padding-left: 25rem;
+        padding-right: 5rem;
+        .info{
+            h6{
+                color: $elfgreen;
+            }
+            h2{
+                color: $woodsmoke;
+                margin: 2rem 0;
+                span{
+                    background-color: $elfgreentransparent;
+                    color: $elfgreen;
+                    padding: 0 0.5rem;
+                }
+            }
+            p{
+                color: $darkgrey;
+            }
+        }
+        hr{
+            margin: 3rem;
+        }
+        form{
+            input, select, textarea{
+                background-color: $greygreen;
+                &::placeholder{
+                    color: $inputgrey;
+                }
+            }
+            select{
+                color: $inputgrey;
+            }
+             #send_text{
+                height: 80px;
+                resize: none;
+             }
+             .btn-custom{
+                background-color: $elfgreen;
+                color: $light;
+             }
+        }
+    }
+    .right{
+        width: 30%;
+        h4{
+            margin: 1.5rem 0;
+        }
+        p{
+            width: 50%;
+            color: $darkgrey;
+        }
+        hr{
+            width: 50%;
+        }
+        .contacts{
+            div{
+                color: $elfgreen;
+                div:first-child{
+                    background-color: $elfgreentransparent;
+                    aspect-ratio: 1/1;
+                    width: 35px;
+                    border-radius: 50%;
+                    scale: 1.2;
+                    margin-right: 0.5rem;
+                    transition: all 0.5s;
+                    &:hover{
+                        background-color: $elfgreen;
+                        border-color: $secondary;
+                        color: $secondary;
+                        scale: 1.3;
+                    }
+                    &:active{
+                        scale: 1;
+                    }
+                }
+            }
+        }
+    }
+}
