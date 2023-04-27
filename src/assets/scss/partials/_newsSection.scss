@@ -1,0 +1,56 @@
+@use "./variables.scss" as *;
+
+#news{
+    h6{
+        color: $elfgreen;
+    }
+    h2{
+        color: $woodsmoke;
+        span{
+            color: $elfgreen;
+            background-color: $elfgreentransparent;
+            padding: 0 0.3rem;
+        }
+    }
+    p{
+        color: $darkgrey;
+        margin-bottom: 0;
+    }
+    .btn-custom{
+        color: $light;
+        background-color: $elfgreen;
+        border: $elfgreen 1px solid;
+        padding: 0.5rem 1.1rem;
+        transition: all 0.5s;
+        &:hover{
+            scale: 1.1;
+            color: $elfgreen;
+            background-color: $smokegreen;
+            border: $elfgreen 1px solid;
+        }
+        &:active{
+            scale: 0.9;
+        }
+    }
+    .col{
+        .card{
+        position: relative;
+        border-radius: 5%;
+        border: none;
+        img{
+            border-radius: 5%;
+            filter: brightness(0.4);
+        }
+        span{
+            text-transform: uppercase;
+            text-align: center;
+            color: $light;
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+            padding: 0 0.7rem;
+            width: 100%;
+        }
+    }
+    }
+}
