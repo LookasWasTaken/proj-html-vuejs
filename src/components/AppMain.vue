@@ -1,8 +1,12 @@
 <script>
 import { state } from "../assets/data/state";
+import ServiceSection from "./ServiceSection.vue"
 
 export default {
     name: 'AppMain',
+    components: {
+        ServiceSection,
+    },
     data() {
         return {
             state
@@ -13,6 +17,7 @@ export default {
 
 <template>
     <main>
-        ciao sono invece il main
+        <ServiceSection></ServiceSection>
+
     </main>
 </template>

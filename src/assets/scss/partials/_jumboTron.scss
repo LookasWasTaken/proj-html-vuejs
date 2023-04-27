@@ -49,6 +49,7 @@
             transition: all 0.5s;
             &:hover{
                 scale: 1.1;
+                background-color: $elfgreen;
             }
             &:active{
                 scale: 0.9;

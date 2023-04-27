@@ -1,0 +1,36 @@
+@use "./variables.scss" as *;
+
+section{
+    background-color: $lightgreen;
+    padding: 5rem 0 7rem 0;
+    h6{
+        color: $elfgreen;
+    }
+    p{
+        color: $darkgrey;
+    }
+    .btn-custom{
+        color: $light;
+        border: $elfgreen 1px solid;
+        transition: all 0.5s;
+        &:hover{
+            scale: 1.1;
+            color: $elfgreen;
+            background-color: $smokegreen;
+            border: $elfgreen 1px solid;
+        }
+        &:active{
+            scale: 0.9;
+        }
+    }
+    
+    .bg_light{
+        color: $elfgreen;
+        background-color: $smokegreen;
+        border: none;
+    }
+    
+    .bg_elf{
+        background-color: $elfgreen;
+    }
+}
