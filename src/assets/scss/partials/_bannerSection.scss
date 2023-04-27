@@ -1,0 +1,14 @@
+@use "./variables.scss" as *;
+
+#banner{
+    background-color: $lightgreen;
+    height: 250px;
+    .container{
+        justify-content: space-around;
+        align-items: center;
+        img{
+            opacity: 0.6;
+            scale: 0.7;
+        }
+    }
+}
