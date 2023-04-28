@@ -1,5 +1,4 @@
 <script>
-import { state } from "../assets/data/state";
 import { social } from "../assets/data/social";
 import { info } from "../assets/data/info";
 
@@ -7,7 +6,6 @@ export default {
     name: 'HeaderMenu',
     data() {
         return {
-            state,
             social,
             info,
         }

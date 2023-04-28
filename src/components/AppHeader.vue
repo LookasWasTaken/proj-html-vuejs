@@ -1,5 +1,4 @@
 <script>
-import { state } from "../assets/data/state";
 import HeaderMenu from "./HeaderMenu.vue";
 import JumboTron from "./JumboTron.vue";
 
@@ -9,11 +8,6 @@ export default {
         HeaderMenu,
         JumboTron,
     },
-    data() {
-        return {
-            state
-        }
-    }
 }
 </script>
 

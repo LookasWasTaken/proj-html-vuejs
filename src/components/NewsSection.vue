@@ -1,12 +1,10 @@
 <script>
-import { state } from '../assets/data/state';
 import { news } from '../assets/data/news';
 
 export default {
     name: 'NewsSection',
     data() {
         return {
-            state,
             news,
             showAll: false,
         }

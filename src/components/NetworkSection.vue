@@ -1,12 +1,10 @@
 <script>
-import { state } from '../assets/data/state';
 import { network } from '../assets/data/network';
 
 export default {
     name: 'NetworkSection',
     data() {
         return {
-            state,
             network,
         }
     },

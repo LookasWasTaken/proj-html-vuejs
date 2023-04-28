@@ -1,5 +1,4 @@
 <script>
-import { state } from "../assets/data/state";
 import ServiceSection from "./ServiceSection.vue"
 import NetworkSection from "./NetworkSection.vue"
 import BannerSection from "./BannerSection.vue"
@@ -17,11 +16,6 @@ export default {
         LetterSection,
         MessageSection,
     },
-    data() {
-        return {
-            state
-        }
-    }
 }
 </script>
 

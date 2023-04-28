@@ -1,5 +1,4 @@
 <script>
-import { state } from "../assets/data/state";
 import { info } from "../assets/data/info";
 import { links } from "../assets/data/links"
 import nexgenLogo from "./nexgenLogo.vue";
@@ -13,7 +12,6 @@ export default {
     },
     data() {
         return {
-            state,
             info,
             links,
         }

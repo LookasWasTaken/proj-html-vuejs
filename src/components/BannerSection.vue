@@ -1,12 +1,10 @@
 <script>
-import { state } from '../assets/data/state';
 import { banner } from '../assets/data/banner';
 
 export default {
     name: 'BannerSection',
     data() {
         return {
-            state,
             banner,
         }
     },

@@ -1,13 +1,7 @@
 <script>
-import { state } from "../assets/data/state";
 
 export default {
     name: 'ServiceSection',
-    data() {
-        return {
-            state
-        }
-    }
 }
 </script>
 
