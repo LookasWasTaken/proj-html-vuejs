@@ -1,11 +1,13 @@
 <script>
 import { state } from '../assets/data/state';
+import { network } from '../assets/data/network';
 
 export default {
     name: 'NetworkSection',
     data() {
         return {
-            state
+            state,
+            network,
         }
     },
 }
@@ -24,31 +26,13 @@ export default {
             </h3>
             <p>With all of this expertise and capability comes an unrivalled commitment to customer service.</p>
             <div class="skills">
-                <div class="skill d-flex gap-3">
+                <div v-for="work in network" class="skill d-flex gap-3">
                     <div class="circle">
-                        [0]
+                        <span>[{{ work.percentage }}]</span>
                     </div>
                     <div class="info">
-                        <h3>Leadership</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="skill d-flex gap-3">
-                    <div class="circle">
-                        [1]
-                    </div>
-                    <div class="info">
-                        <h3>Psychology</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="skill d-flex gap-3">
-                    <div class="circle">
-                        [15]
-                    </div>
-                    <div class="info">
-                        <h3>Flexibility</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                        <h3>{{ work.type }}</h3>
+                        <p>{{ work.text }}</p>
                     </div>
                 </div>
             </div>
