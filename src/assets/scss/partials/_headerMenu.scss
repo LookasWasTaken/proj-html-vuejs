@@ -2,8 +2,10 @@
 
 nav{
     background-color: $primary;
+    position: relative;
+    z-index: 99;
     color: $grey;
-    box-shadow: inset 0 0 5px 0 black;
+    box-shadow: 0 0 5px 0 black;
     span{
         cursor: pointer;
     }
