@@ -14,7 +14,7 @@ export const state = reactive({
         this.name = null
         this.email = null
     },
-    storeInfo(){
+    storeData(){
         this.storeUserInfo.push({userName : this.userName, userEmail : this.userEmail, userPhone : this.userPhone, userMessage : this.userMessage})
         this.userName = null,
         this.userEmail = null,

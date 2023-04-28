@@ -8,6 +8,22 @@ export default {
             network,
         }
     },
+    mounted() {
+        const circles = document.querySelectorAll(".circle_filled");
+        circles.forEach((item, index) => {
+            if (network[index].percentage <= 12.5) {
+                item.style.clipPath = `polygon(50% 50%, 0 50%, 0 ${50 - ((50 / 12.5) * network[index].percentage)}%)`;
+            } else if (network[index].percentage <= 37.5) {
+                item.style.clipPath = `polygon(50% 50%, 0 50%, 0 0, ${(100 / 25) * (network[index].percentage - 12.5)}% 0`;
+            } else if (network[index].percentage <= 62.5) {
+                item.style.clipPath = `polygon(50% 50%, 0 50%, 0 0, 100% 0, 100% ${(100 / 25) * (network[index].percentage - 37.5)}%`;
+            } else if (network[index].percentage <= 87.5) {
+                item.style.clipPath = `polygon(50% 50%, 0 50%, 0 0, 100% 0, 100% 100%, ${100 - ((100 / 25) * (network[index].percentage - 62.5))}% 100%`;
+            } else {
+                item.style.clipPath = `polygon(50% 50%, 0 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 ${100 - ((50 / 12.5) * (network[index].percentage - 87.5))}%`;
+            } // @https://github.com/mattiavolpe
+        });
+    },
 }
 </script>
 
@@ -24,9 +40,11 @@ export default {
             </h3>
             <p>With all of this expertise and capability comes an unrivalled commitment to customer service.</p>
             <div class="skills">
-                <div v-for="work in network" class="skill d-flex gap-3">
-                    <div class="circle">
-                        <span>[{{ work.percentage }}]</span>
+                <div v-for="work in network" class="skill d-flex">
+                    <div class="box_circle">
+                        <div class="circle_empty"></div>
+                        <div class="circle_filled"></div>
+                        <div class="percentage">{{ work.percentage }} <span>%</span></div>
                     </div>
                     <div class="info">
                         <h3>{{ work.type }}</h3>

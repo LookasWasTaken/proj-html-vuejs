@@ -49,6 +49,43 @@
                 border-radius: 5px;
             }
         }
+        .skills{
+            .skill{
+                gap: 5rem;
+                margin: 2rem 0;
+                height: 106px;
+            }
+            .box_circle{
+                position: relative;
+                .circle_empty, .circle_filled, .percentage{
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    transform: translate(50%, -50%);
+                    aspect-ratio: 1/1;
+                    width: 110px;
+                }
+                .circle_empty{
+                    border: 10px solid $circlegrey;
+                }
+                .circle_filled{
+                    border: 10px solid $elfgreen;
+                }
+                .percentage{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $light;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    span{
+                        font-size: 0.8rem;
+                        transform: translate(0, 20%);
+                    }
+                }
+            }
+        }
     }
     .right{
         width: 50%;
