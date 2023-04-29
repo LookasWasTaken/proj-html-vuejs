@@ -29,7 +29,7 @@ export default {
                     <input v-model="state.email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-Mail">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <button @click="state.saveInfo()" type="submit" class="btn btn-custom">SUBSCRIBE</button>
+                <button @click.prevent.self="state.saveInfo()" type="submit" class="btn btn-custom">SUBSCRIBE</button>
             </form>
         </div>
     </section>

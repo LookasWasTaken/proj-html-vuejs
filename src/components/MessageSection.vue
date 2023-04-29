@@ -44,7 +44,7 @@ export default {
                     <textarea v-model="state.userMessage" class="form-control" placeholder="Message" id="send_text"></textarea>
                 </div>
                 <div class="col-12">
-                    <button @click="state.storeData()" class="btn btn-custom">SEND</button>
+                    <button @click.prevent.self="state.storeData()" class="btn btn-custom">SEND</button>
                 </div>
             </form>
         </div>
